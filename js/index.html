@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Creative - Start Bootstrap Theme</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap Icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+        <!-- SimpleLightbox plugin CSS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .career-card {
+                display: flex;
+                background: #f6f6f8;
+                border-radius: 18px;
+                box-shadow: 0 4px 32px 0 rgba(31, 38, 135, 0.10);
+                padding: 40px 32px;
+                max-width: 1100px;
+                margin: 40px auto;
+                gap: 40px;
+            }
+            .career-left {
+                flex: 0 0 320px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #fff;
+                border-radius: 14px;
+                box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.06);
+                padding: 32px 18px 24px 18px;
+            }
+            .career-title {
+                font-size: 2.8rem;
+                font-weight: 900;
+                color: #8b8ff7;
+                letter-spacing: 2px;
+                margin-bottom: 18px;
+                font-family: 'Merriweather Sans', 'Pretendard', sans-serif;
+            }
+            .career-photo img {
+                width: 160px;
+                height: 160px;
+                border-radius: 18px;
+                object-fit: cover;
+                border: 4px solid #e3eaff;
+                background: #fff;
+                margin-bottom: 18px;
+            }
+            .career-info {
+                width: 100%;
+            }
+            .career-info-title {
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: #444;
+                margin-bottom: 10px;
+                border-bottom: 2px solid #e3eaff;
+                padding-bottom: 4px;
+            }
+            .career-info-list {
+                font-size: 1rem;
+                color: #222;
+            }
+            .career-info-list div {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 6px;
+            }
+            .career-info-list span {
+                color: #888;
+                min-width: 60px;
+                font-weight: 500;
+            }
+
+            .career-right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                justify-content: flex-start;
+            }
+            .career-section {
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0 1px 8px 0 rgba(31, 38, 135, 0.04);
+                padding: 18px 24px 12px 24px;
+            }
+            .career-section-title {
+                font-size: 1.15rem;
+                font-weight: 700;
+                color: #6d6d6d;
+                border-bottom: 2px solid #e3eaff;
+                margin-bottom: 10px;
+                padding-bottom: 4px;
+            }
+            .career-section-list {
+                font-size: 1rem;
+                color: #222;
+            }
+            .career-section-list div {
+                display: flex;
+                align-items: flex-start;
+                margin-bottom: 7px;
+                gap: 12px;
+            }
+            .career-date {
+                color: #b366ff;
+                font-size: 0.98em;
+                min-width: 90px;
+                font-family: 'Merriweather Sans', 'Pretendard', sans-serif;
+            }
+            @media (max-width: 900px) {
+                .career-card {
+                    flex-direction: column;
+                    padding: 18px 6px;
+                    gap: 18px;
+                }
+                .career-left, .career-right {
+                    width: 100%;
+                    min-width: 0;
+                }
+                .career-left {
+                    flex-direction: row;
+                    align-items: flex-start;
+                    gap: 18px;
+                    padding: 18px 8px;
+                }
+                .career-photo img {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 12px;
+                }
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">MY PORTFOILO</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#PROFILE">PROFILE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#PORTFOLIO">PORTFOLIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#SKILLS">SKILLS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#CONTACT">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">PORTFOILO</h1>
+                        <h3 class="text-white font-weight-bold">BY KIM JIN HOON</h3>
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="page-section bg-white" id="PROFILE" style="height: 100vh;">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-black mt-0">PROFILE</h2>
+                        </div>
+                </div>
+                <div class="career-left">
+                    <div class="career-title">CAREER</div>
+                    <div class="career-photo">
+                        <img src="/img/cat.jpg" alt="프로필 사진" />
+                    </div>
+                    <div class="career-info">
+                        <div class="career-info-title">개인 정보</div>
+                        <div class="career-info-list">
+                            <div><span>이름</span> ㅇㅇㅇ</div>
+                            <div><span>이메일</span> example@email.com</div>
+                            <div><span>번호</span> 010-1234-5678</div>
+                            <div><span>주소</span> 서울특별시 강구구 ...</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="career-card">
+                    
+                    <div class="career-right">
+                        <div class="career-section">
+                            <div class="career-section-title">학력과 교육이력</div>
+                            <div class="career-section-list">
+                                <div>
+                                    <span class="career-date">2019.03 ~ 2024.02</span>
+                                    <span>홍익대학교 컴퓨터공학과 19학번 졸업</span>
+                                </div>
+                                <div>
+                                    <span class="career-date">2022.01 ~ 2022.02</span>
+                                    <span>42 서울 3기</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="career-right">
+                        <div class="career-section">
+                            <div class="career-section-title">학력과 교육이력</div>
+                            <div class="career-section-list">
+                                <div>
+                                    <span class="career-date">2019.03 ~ 2024.02</span>
+                                    <span>홍익대학교 컴퓨터공학과 19학번 졸업</span>
+                                </div>
+                                <div>
+                                    <span class="career-date">2022.01 ~ 2022.02</span>
+                                    <span>42 서울 3기</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="career-right">
+                        <div class="career-section">
+                            <div class="career-section-title">학력과 교육이력</div>
+                            <div class="career-section-list">
+                                <div>
+                                    <span class="career-date">2019.03 ~ 2024.02</span>
+                                    <span>홍익대학교 컴퓨터공학과 19학번 졸업</span>
+                                </div>
+                                <div>
+                                    <span class="career-date">2022.01 ~ 2022.02</span>
+                                    <span>42 서울 3기</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="career-right">
+                        <div class="career-section">
+                            <div class="career-section-title">학력과 교육이력</div>
+                            <div class="career-section-list">
+                                <div>
+                                    <span class="career-date">2019.03 ~ 2024.02</span>
+                                    <span>홍익대학교 컴퓨터공학과 19학번 졸업</span>
+                                </div>
+                                <div>
+                                    <span class="career-date">2022.01 ~ 2022.02</span>
+                                    <span>42 서울 3기</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+        <section class="page-section" id="PORTFOLIO">
+            <div class="container px-4 px-lg-5">
+                <h2 class="text-center mt-0">PORTFOLIO</h2>                <div class="row gx-4 gx-lg-5">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-camera fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">여행 갤러리</h3>
+                            <p class="text-muted mb-0">여행 사진을 기록하고 공유하는 웹 갤러리로, 지역별 분류와 반응형 디자인을 통해 어디서나 감상이 가능합니다.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-menu-up fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">요리 레시피</h3>
+                            <p class="text-muted mb-0">다양한 요리 레시피를 쉽고 간편하게 제공하는 사이트입니다.
+                                초보자도 따라할 수 있도록 단계별 설명과 사진을 포함했습니다.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="mt-5">
+                            <div class="mb-2"><i class="bi-pencil-square fs-1 text-primary"></i></div>
+                            <h3 class="h4 mb-2">특허 관리프로그램</h3>
+                            <p class="text-muted mb-0">특허 출원부터 만료까지의 전 과정을 체계적으로 관리할 수 있는 프로그램입니다.
+                                알림 기능과 문서 정리 시스템을 통해 효율적인 지식재산 관리가 가능합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/travel1.png" style="height: 100%;">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/travel1.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">여행갤러리</div>
+                                <div class="project-name">게시글 등록</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/travel.png" style="height: 100%;">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/travel.png" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">여행갤러리</div>
+                                <div class="project-name">사진 공유</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" style="height: 100%;">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">요리레시피</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg" style="height: 100%;">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">요리레시피</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg" style="height: 100%;">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50">요리레시피</div>
+                                <div class="project-name">Project Name</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/patent.PNG" style="height: 100%;">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/patent.PNG" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">특허관리프로그램</div>
+                                <div class="project-name">특허 검색API</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/patent1.PNG" style="height: 100%;">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/patent1.PNG" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">특허관리프로그램</div>
+                                <div class="project-name">발명 내용API</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/patent2.PNG" style="height: 100%;">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/patent2.PNG" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">특허관리프로그램</div>
+                                <div class="project-name">특허 알림서비스</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/patent3.PNG" style="height: 100%;">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/patent3.PNG" alt="..." />
+                            <div class="portfolio-box-caption p-3">
+                                <div class="project-category text-white-50">특허관리프로그램</div>
+                                <div class="project-name"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call to action-->
+        <section class="page-section bg-dark text-white" id="SKILLS" style="height: 100vh;">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4">SKILLS</h2>
+                <div></div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="CONTACT" style="height: 100vh;">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">CONTACT</h2>
+                        </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <div class="col-lg-6">   
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
+                        <div>e-mail</div>
+                        <i class="bi-envelope-open fs-2 mb-3 text-muted"></i>
+                        <div>010-****-****</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="bg-light py-5">
+            <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; KIM JIN HOON</div></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
